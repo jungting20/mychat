@@ -7,11 +7,8 @@ html
     h1 진정한express
     script(src="/socket.io/socket.io.js")
     script.
-        var socket = io.connect('http://localhost:8009', {
+        var socket = io.connect('http://localhost:8009/room', {
             path:'/socket.io'
         });
-        socket.on('test',data => {
-            console.log(data);
-        });
-
+        
     
