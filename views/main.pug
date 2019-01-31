@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title About
+  body
+    h1 진정한express
+    script(src="/socket.io/socket.io.js")
+    script.
+        var socket = io.connect('http://localhost:8009', {
+            path:'/socket.io'
+        });
+        socket.on('test',data => {
+            console.log(data);
+        });
+
+    
